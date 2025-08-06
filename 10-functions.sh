@@ -1,6 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
+TIMESTAMP=$(date +%f-%h-%m-%s)
+SCRIPTNAME=$($0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -21,15 +24,15 @@ else
 fi
 
 
-dnf install mysql -y
+dnf install mysql -y &>> $LOGFILE
 VALIDATE $? "Installing MYSQL"
 
-dnf install git -y
+dnf install git -y &>> $LOGFILE
 VALIDATE $? "Installing Git"
 
 if [ $? -ne 0 ]
 then
-    echo "Installation of your package is Failure"
+    echo "Installation of all packages is Failure"
 else
-    echo "Installation of your package is Success"
+    echo "Installation of all packages is Success"
 fi
