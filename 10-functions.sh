@@ -29,7 +29,7 @@ VALIDATE $? "Installing Git"
 
 if [ $? -ne 0 ]
 then
-    echo "Installation of your package is Success"
-else
     echo "Installation of your package is Failure"
+else
+    echo "Installation of your package is Success"
 fi
