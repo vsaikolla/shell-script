@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# if any text/password/anything need to be entered in confidential mode then we use this
+
+echo "Please enter username::"
+
+read USERNAME
+
+echo "Please enter your password::"
+
+read -u PASSWORD
+
+echo "Username is $USERNAME and Password is $PASSWORD"
