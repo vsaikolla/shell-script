@@ -26,3 +26,5 @@ VALIDATE $? "Installing MYSQL"
 
 dnf install git -y
 VALIDATE $? "Installing Git"
+
+echo "Installation of your package $2 is Success"
