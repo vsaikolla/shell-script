@@ -16,4 +16,4 @@ echo "hostname : $HOSTNAME"
 
 echo "process ID of the current shell script : $$"
 
-echo ""
+echo "process ID of last background command: $!"
