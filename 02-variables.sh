@@ -1,7 +1,8 @@
 #!/bin/bash
 
-#variable starts with $
+#variable starts with $ when we are referring the variable anywhere
 #there shouldn't be any space between any variable and its value
+#$PERSON==${PERSON}
 
 PERSON1=suresh
 PERSON2=ramesh
