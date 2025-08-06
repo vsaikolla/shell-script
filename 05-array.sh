@@ -2,7 +2,7 @@
 
 #array is a list of values means if a variable holds more than one value then that variable is called an array
 
-school = ( "Teacher" "Student" "Books" "Bag" "Bus" )
+school=( "Teacher" "Student" "Books" "Bag" "Bus" )
 #list size for the above array is 5 (count starts with 1)
 #index size for the above array is 4 (count starts with 0)
 
