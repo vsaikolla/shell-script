@@ -27,4 +27,9 @@ VALIDATE $? "Installing MYSQL"
 dnf install git -y
 VALIDATE $? "Installing Git"
 
-echo "Installation of your package $2 is Success"
+if [ $? -ne 0 ]
+then
+    echo "Installation of your package is Success"
+else
+    echo "Installation of your package is Failure"
+fi
