@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#-gt,-lt,-et,-ge,-le,!e
+
 NUMBER=$1
 
 if [ $NUMBER -gt 10 ]
